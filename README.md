@@ -1,6 +1,8 @@
-# vscode-python-template
+# TTS-UI
 
-A Template for Python Programming in VSCode
+A WebUI for Text-to-Speech generation.
+
+The WebUI is build on top of the [coqui-tts](https://github.com/idiap/coqui-ai-TTS) Python package.
 
 ## Setup
 
