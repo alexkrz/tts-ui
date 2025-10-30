@@ -3,4 +3,8 @@
 
 # Other ignores follow here
 /checkpoints/*
+!/checkpoints/.gitkeep
 /outputs/*
+!/outputs/.gitkeep
+/targets/*
+!/targets/Rogger.wav

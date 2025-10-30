@@ -6,7 +6,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Initialize TTS
 print("Initializing model..")
-tts = TTS(model_path="checkpoints/XTTS-v2", config_path="checkpoints/XTTS-v2/config.json")
+tts = TTS(model_path="checkpoints/XTTS-main", config_path="checkpoints/XTTS-main/config.json")
 tts.to(device)
 
 # List speakers

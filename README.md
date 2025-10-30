@@ -16,11 +16,11 @@ pip install -r requirements.txt
 pre-commit install
 ```
 
-Clone the [XTTS-v2 checkpoint](https://huggingface.co/coqui/XTTS-v2) (v2.0.3) from Huggingface to the local `checkpoints/` directory:
+Clone the [XTTS-v2 checkpoint](https://huggingface.co/coqui/XTTS-v2) (main) from Huggingface to the local `checkpoints/` directory:
 
 ```bash
 cd checkpoints
-hf download coqui/XTTS-v2 --revision=v2.0.3 --local-dir=XTTS-v2
+hf download coqui/XTTS-v2 --local-dir=XTTS-main
 ```
 
 ## WebUI

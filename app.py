@@ -41,7 +41,7 @@ else:
     device = torch.device("cuda:0")
 
 # Load model
-tts = TTS(model_path="checkpoints/XTTS-v2", config_path="checkpoints/XTTS-v2/config.json")
+tts = TTS(model_path="checkpoints/XTTS-main", config_path="checkpoints/XTTS-main/config.json")
 tts.to(device)
 
 # # Random sentence (assuming harvard_sentences.txt is in the correct path)
