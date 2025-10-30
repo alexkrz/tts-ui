@@ -30,3 +30,5 @@ Run the WebUI by launching `app.py`:
 ```bash
 python app.py
 ```
+
+The WebUI is adopted from <https://github.com/BoltzmannEntropy/xtts2-ui>.
