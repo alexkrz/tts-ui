@@ -2,3 +2,5 @@
 /.vscode/
 
 # Other ignores follow here
+/checkpoints/*
+/outputs/*
