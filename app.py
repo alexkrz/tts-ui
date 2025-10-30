@@ -1,6 +1,7 @@
 # Code source: https://github.com/BoltzmannEntropy/xtts2-ui/blob/main/app.py
 import html
 import json
+import logging
 import platform
 import uuid
 from pathlib import Path
@@ -9,6 +10,8 @@ import gradio as gr
 import soundfile as sf
 import torch
 from TTS.api import TTS
+
+logging.basicConfig(level=logging.INFO)
 
 
 def is_mac_os():
@@ -22,7 +25,7 @@ params = {
     "remove_trailing_dots": False,
     "voice": "Rogger.wav",
     "language": "English",
-    "model_name": "tts_models/multilingual/multi-dataset/xtts_v2",
+    # "model_name": "tts_models/multilingual/multi-dataset/xtts_v2",
 }
 
 # SUPPORTED_FORMATS = ['wav', 'mp3', 'flac', 'ogg']
@@ -38,7 +41,8 @@ else:
     device = torch.device("cuda:0")
 
 # Load model
-tts = TTS(model_name=params["model_name"]).to(device)
+tts = TTS(model_path="checkpoints/XTTS-v2", config_path="checkpoints/XTTS-v2/config.json")
+tts.to(device)
 
 # # Random sentence (assuming harvard_sentences.txt is in the correct path)
 # def random_sentence():
