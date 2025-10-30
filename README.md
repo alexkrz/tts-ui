@@ -22,3 +22,11 @@ Clone the [XTTS-v2 checkpoint](https://huggingface.co/coqui/XTTS-v2) (main) from
 cd checkpoints
 hf download coqui/XTTS-v2 --local-dir=XTTS-v2
 ```
+
+## WebUI
+
+Run the WebUI by launching `app.py`:
+
+```bash
+python app.py
+```
