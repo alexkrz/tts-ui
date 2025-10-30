@@ -32,3 +32,8 @@ python app.py
 ```
 
 The WebUI is adopted from <https://github.com/BoltzmannEntropy/xtts2-ui>.
+
+## License
+
+Currently, there are unresolved issues concerning the licensing of XTTS, after the developing company Coqui AI has shut down.
+A corresponing thread can be found here: <https://github.com/coqui-ai/TTS/issues/3490#issuecomment-1878926431>
