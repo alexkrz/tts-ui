@@ -30,7 +30,7 @@ def tts_with_model():
     # Write output
     print("Writing output to file..")
     wav = outputs["wav"]
-    wavfile.write("outputs/demo.wav", rate=24000, data=wav)
+    wavfile.write("outputs/xtts-model.wav", rate=24000, data=wav)
 
 
 def tts_with_api():
@@ -52,7 +52,7 @@ def tts_with_api():
 
     # TTS to a file, use a preset speaker
     print("Saving TTS to file..")
-    tts.tts_to_file(text="Hello world", speaker="Craig Gutsy", language="en", file_path="outputs/output.wav")
+    tts.tts_to_file(text="Hello world", speaker="Craig Gutsy", language="en", file_path="outputs/xtts-api.wav")
 
 
 if __name__ == "__main__":
